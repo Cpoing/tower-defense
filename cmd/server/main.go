@@ -22,6 +22,7 @@ func main() {
 			fmt.Println("Error connecting to server")
 			return
 		}
+    fmt.Println("Connected to tcp server")
 
 		go connection.HandleConnection(conn)
 	}
